@@ -1,1 +1,11 @@
+name: GitHub Actions DotNet
+on:
+  push:
+    paths-ignore:
+      - '**/*.md'
 
+jobs:
+  Job-DotNet-Push:
+    runs-on: ubuntu-latest
+    env:
+      DOTNET_CORE_VERSION: 3.1.x
